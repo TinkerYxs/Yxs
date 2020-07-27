@@ -10,6 +10,20 @@
  */
 package yxs;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
+
 /**
  * @ClassName: AddTwoNum
  * @Description:TODO(这里用一句话描述这个类的作用)
@@ -19,6 +33,8 @@ package yxs;
  * @Copyright: 2020 yxs. All rights reserved.
  */
 public class AddTwoNum {
+
+	public volatile int m;
 
 	/**
 	 * @Title: AddTwoNum @Description: TODO(这里用一句话描述这个方法的作用) @param: @throws
@@ -206,6 +222,51 @@ public class AddTwoNum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Map<String, String> hashMap = new HashMap<String, String>();
+
+		Set<String> set = new HashSet<String>();
+
+		List<String> l = new ArrayList<String>();
+
+		Hashtable<String, String> h = new Hashtable<String, String>();
+
+		AtomicBoolean boolean1 = new AtomicBoolean();
+
+		AtomicInteger integer = new AtomicInteger();
+
+		AtomicLong long1 = new AtomicLong();
+
+		ArrayList<String> strings = new ArrayList<>();
+
+		String[] strings2 = { "aaa" };
+		Arrays.asList(strings2);
+
+		int[] arr = getNumbers();
+		long start = System.currentTimeMillis();
+		Arrays.sort(arr);
+		System.out.println("串行排序时间：" + (System.currentTimeMillis() - start) + " ms");
+
+		arr = getNumbers();
+		start = System.currentTimeMillis();
+		Arrays.parallelSort(arr);
+		System.out.println("并行排序时间：" + (System.currentTimeMillis() - start) + " ms");
+
+		Scanner scanner = new Scanner(System.in);
+		while (scanner.hasNext(".ssss.")) {
+			String i = scanner.next(".ssss.");
+
+			System.out.println(i);
+		}
+
+	}
+
+	private static int[] getNumbers() {
+		int[] arr = new int[5000000];
+		Random r = new Random();
+		for (int i = 0; i < 5000000; ++i) {
+			arr[i] = r.nextInt(1000) + 1;
+		}
+		return arr;
 	}
 
 }
