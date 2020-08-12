@@ -3,6 +3,12 @@
   <groupId>Yxs</groupId>
   <artifactId>yxs</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  
+	<properties>
+		<spring.version>4.2.4.RELEASE</spring.version>
+	</properties>
+  
   <dependencies>
 	<dependency>
 		<groupId>dom4j</groupId>	
@@ -15,5 +21,25 @@
 	    <artifactId>jaxen</artifactId>
 	    <version>1.1.6</version>
 	</dependency>
+	<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-client</artifactId>
+            <version>5.13.4</version>
+        </dependency>
 	</dependencies>
 </project>
