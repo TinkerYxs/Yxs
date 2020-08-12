@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+  <bean name="A" class="yxs.myspring.ioc.object.A">
+     <property name="name" value="tom"></property>
+     <property name="age" value="20"></property>
+  </bean>
+  <bean name="B" class="yxs.myspring.ioc.object.B">
+     <property name="a" ref="A"></property>
+  </bean>
+</beans>
