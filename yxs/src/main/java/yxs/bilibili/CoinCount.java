@@ -8,7 +8,7 @@
  * @version 
  * @Copyright: 2020 yxs. All rights reserved. 
  */
-package yxs;
+package yxs.bilibili;
 
 import java.util.Scanner;
 
