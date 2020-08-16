@@ -47,6 +47,7 @@ public class CoinCount {
 	public static int GetCoinCount(int N) {
 
 		int count = 0;
+
 		if (N >= 1024) {
 			return 0;
 		} else {

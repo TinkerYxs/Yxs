@@ -82,7 +82,8 @@ public class vivo2020num2 {
 		if (flag == 0) {
 			result = -1;
 		}
-
+		String string = new String("222");
 		return result;
+
 	}
 }
