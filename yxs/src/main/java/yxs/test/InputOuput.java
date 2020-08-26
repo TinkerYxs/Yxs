@@ -38,6 +38,10 @@ public class InputOuput {
 
 		Scanner scanner = new Scanner(System.in);
 
+		while (scanner.hasNext()) {
+			String[] string = scanner.nextLine().split("\\.");
+			System.out.println(string.length);
+		}
 		int a = scanner.nextInt();
 		int b = scanner.nextInt();
 		System.out.println(a);
