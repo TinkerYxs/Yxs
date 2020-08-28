@@ -10,6 +10,8 @@
  */
 package yxs;
 
+import java.util.Hashtable;
+
 /**
  * @ClassName: TwoSum
  * @Description:TODO(这里用一句话描述这个类的作用)
@@ -52,6 +54,7 @@ public class TwoSum {
 		int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
 		System.out.println(twoSum(nums, 10)[0]);
 		System.out.println(twoSum(nums, 10)[1]);
+		Hashtable<Integer, Integer> hashtable = new Hashtable<>();
 	}
 
 }
