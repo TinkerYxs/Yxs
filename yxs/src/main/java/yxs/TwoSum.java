@@ -10,7 +10,10 @@
  */
 package yxs;
 
+import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.Vector;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @ClassName: TwoSum
@@ -55,6 +58,12 @@ public class TwoSum {
 		System.out.println(twoSum(nums, 10)[0]);
 		System.out.println(twoSum(nums, 10)[1]);
 		Hashtable<Integer, Integer> hashtable = new Hashtable<>();
+
+		Vector<Integer> vector = new Vector<>();
+
+		ArrayList<Integer> arrayList = new ArrayList<>();
+		ConcurrentHashMap<Integer, String> concurrentHashMap = new ConcurrentHashMap<>();
+
 	}
 
 }
