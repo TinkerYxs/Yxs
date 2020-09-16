@@ -80,31 +80,45 @@ public class Num2 {
 			return 0;
 		}
 		int[] l = new int[h.length];
+
 		int[] r = new int[h.length];
+
 		Arrays.fill(r, h.length);
+
+		System.out.println(Arrays.toString(r));
+
 		Deque<Integer> stack = new ArrayDeque();
+
 		int result = 0;
+
 		for (int i = 0; i < h.length; i++) {
+
 			while (!stack.isEmpty() && h[i] <= h[stack.peek()]) {
 				r[stack.peek()] = i;
 				stack.pop();
 			}
 			if (stack.isEmpty()) {
-				l[i] = -1;
+				l[i] = 0;
 			} else {
-				l[i] = stack.peek();
-
+				l[i] = stack.peek() + 1;
 			}
 			stack.push(i);
+
 		}
+
+		System.out.println(Arrays.toString(l));
+		System.out.println(Arrays.toString(r));
 		for (int k = 0; k < h.length; k++) {
+
 			int width = 0;
-			for (int i = l[k] + 1; i < r[k]; i++) {
+			for (int i = l[k]; i < r[k]; i++) {
 				width += w[i];
 
 			}
 			result = Math.max(result, width * h[k]);
+
 		}
+
 		return result;
 	}
 

@@ -1,3 +1,5 @@
+package yxs.test;
+
 /**  
  * All rights Reserved, Designed By YuanXiaoShuai
  * @Title:  InputOuput.java   
@@ -8,7 +10,6 @@
  * @version 
  * @Copyright: 2020 yxs. All rights reserved. 
  */
-package yxs.test;
 
 import java.util.Scanner;
 

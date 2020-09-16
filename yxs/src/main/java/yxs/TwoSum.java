@@ -54,6 +54,11 @@ public class TwoSum {
 	 *         void @throws
 	 */
 	public static void main(String[] args) {
+
+		String string = new String();
+
+		int[] s = new int[23];
+
 		int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
 		System.out.println(twoSum(nums, 10)[0]);
 		System.out.println(twoSum(nums, 10)[1]);
