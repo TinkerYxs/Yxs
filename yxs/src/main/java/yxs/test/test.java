@@ -28,6 +28,9 @@ public class test {
 
 		System.out.println(stringBuilder.reverse().toString());
 
+		String string2 = new String();
+		string2.contains(string);
+
 	}
 
 }
